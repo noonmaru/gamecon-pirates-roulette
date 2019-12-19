@@ -180,6 +180,7 @@ public class Roulette
     public void destroy()
     {
         Packet.ENTITY.destroy(block.getId()).sendAll();
+        CustomEntityPacket.unregister(block.getId()).sendAll();
 
         for (Spot spot : spots)
         {
