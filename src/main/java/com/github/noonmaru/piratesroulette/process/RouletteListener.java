@@ -15,6 +15,7 @@ import org.bukkit.Location;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.player.*;
 
@@ -54,6 +55,13 @@ public class RouletteListener implements Listener
         {
             process.getRoulette().updateCustomEntity(Collections.singleton(event.getPlayer()));
         }
+    }
+
+    @EventHandler
+    public void onEntityDamage(EntityDamageEvent event)
+    {
+        if (event.getEntity() instanceof Player)
+            event.setCancelled(true);
     }
 
     @EventHandler
