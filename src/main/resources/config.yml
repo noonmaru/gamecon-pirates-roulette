@@ -1,0 +1,13 @@
+spot-gap: 1.0
+spot-line: 3
+pos:
+  x: 97.5
+  y: 76.5
+  z: -174.5
+sword-items:
+  - 'diamond_sword'
+  - 'iron_sword'
+  - 'golden_sword'
+  - 'stone_sword'
+  - 'wooden_sword'
+  - 'stick'

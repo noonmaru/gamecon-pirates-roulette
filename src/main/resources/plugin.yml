@@ -1,0 +1,10 @@
+name: PiratesRoulette
+version: @version@
+main: com.github.noonmaru.piratesroulette.PiratesRoulettePlugin
+depend: [Tap, CustomEntity]
+authors: [Noonmaru]
+website: https://github.com/noonmaru/
+commands:
+  pr:
+    permission: 'pirates-roulette.commands'
+    usage: /<command> start | stop
